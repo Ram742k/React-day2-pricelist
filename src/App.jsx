@@ -1,38 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import PriceCard from './components/PriceCard';
 
-function App() {
-  const [count, setCount] = useState(0)
+const plans = [
+  {
+    name: 'Basic Plan',
+    price: '$9.99',
+    features: [
+      '10GB Storage',
+      '5 Users Allowed',
+      'Send up to 30MB/s',
+      'Unlimited Public Projects',
+      'Community Access',
+      'Unlimited Private Projects',
+      'Dedicated Phone Support',
+      'Free Subdomain',
+      'Monthly Status Reports',
+      'Unlimited SSL Certificates',
+      '24/7 Customer Support',
+      'Free Installment',
+    ],
+  },
+  {
+    name: 'Pro Plan',
+    price: '$24.99',
+    features: [
+      '25GB Storage',
+      '10 Users Allowed',
+      'Send up to 50MB/s',
+      'Unlimited Public Projects',
+      'Community Access',
+      'Unlimited Private Projects',
+      'Dedicated Phone Support',
+      'Free Subdomain',
+      'Monthly Status Reports',
+      'Unlimited SSL Certificates',
+      '24/7 Customer Support',
+      'Free Installment',
+    ],
+  },
+  {
+    name: 'Enterprise Plan',
+    price: '$49.99',
+    features: [
+      '50GB Storage',
+      '20 Users Allowed',
+      'Send up to 100MB/s',
+      'Unlimited Public Projects',
+      'Community Access',
+      'Unlimited Private Projects',
+      'Dedicated Phone Support',
+      'Free Subdomain',
+      'Monthly Status Reports',
+      'Unlimited SSL Certificates',
+      '24/7 Customer Support',
+      'Free Installment',
+    ],
+  },
+];
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://github.com/Ram742k" target="_blank">
-          <img  src="https://avatars.githubusercontent.com/u/155966298?v=4" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <h1>Pricing Plans</h1>
+        <p>
+          Choose the best plan for your business.
+        </p>
+      <div className="row">
+        
+        {plans.map((plan, index) => (
+          <PriceCard key={index} name={plan.name} price={plan.price} features={plan.features} />
+        ))}
       </div>
-      <h1>Ramkumar Sundaram</h1>
-      <div className="card">
-        {/* <button onClick={() => setCount((count) => count + 5)}>
-          count is {count}
-        </button> */}
-        <h2>
-          This is my First React App. <br />
-          I'm using Vite to build this app. <br />
-          I'm using React to build this app. <br />
-          
-        </h2>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
