@@ -6,11 +6,10 @@ Welcome to the Pricing Plans project! This is a simple React application that di
 
 This project showcases a set of pricing plans, each with its own set of features. It's built using React and demonstrates the use of reusable components to create a dynamic and responsive UI.
 
-
 The project consists of two main components:
 
 1. **App Component**: This component is the main entry point of the application. It renders the pricing plans by mapping through the `plans` array and passing the data to the `PriceCard` component.
-   
+
 2. **PriceCard Component**: This component represents a single pricing card. It receives props such as name, price, and features, and renders them accordingly.
 
 ### 🛠️ Technologies Used
@@ -58,4 +57,4 @@ pricing-plans-app/
 
 ## Credits
 
-This project was made with ❤️ by Ramkumar 
+This project was made with ❤️ by Ramkumar.[EOF]
