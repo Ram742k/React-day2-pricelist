@@ -72,6 +72,10 @@ p {
   padding: 0;
   margin: 0;
 }
+.card ul{
+ text-align: left;
+  
+}
 
 .list-unstyled li {
   margin: 10px 0;
@@ -148,6 +152,9 @@ p {
   }
 }
 .card ul li:before{
-  content: '✔';
+  content: '✔  ';
+  font-weight: bold;
+  margin-left: 15%;
   font-weight: 600;
+  
 }
