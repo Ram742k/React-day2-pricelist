@@ -19,7 +19,7 @@ const PriceCard = ({ name, price, features }) => {
             ))}
           </ul>
           <button type="button" className="btn btn-lg btn-block btn-outline-primary">
-            Sign up for free
+            Button
           </button>
         </div>
       </div>
