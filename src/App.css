@@ -147,3 +147,7 @@ p {
     padding: 6px 12px;
   }
 }
+.card ul li:before{
+  content: '✔';
+  font-weight: 600;
+  
