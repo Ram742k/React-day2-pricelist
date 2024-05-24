@@ -4,8 +4,8 @@ import PriceCard from './components/PriceCard';
 
 const plans = [
   {
-    name: 'Basic Plan',
-    price: '$9.99',
+    name: 'FREE',
+    price: '$0.00',
     features: [
       '10GB Storage',
       '5 Users Allowed',
@@ -22,8 +22,8 @@ const plans = [
     ],
   },
   {
-    name: 'Pro Plan',
-    price: '$24.99',
+    name: 'PLUS',
+    price: '$9.00',
     features: [
       '25GB Storage',
       '10 Users Allowed',
@@ -40,8 +40,8 @@ const plans = [
     ],
   },
   {
-    name: 'Enterprise Plan',
-    price: '$49.99',
+    name: 'PRO',
+    price: '$49.00',
     features: [
       '50GB Storage',
       '20 Users Allowed',
