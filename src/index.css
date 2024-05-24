@@ -121,7 +121,7 @@ button:focus-visible {
   font-weight: 600;
 }
 .price-card ul li:before{
-  content: '';
+  content: '✔';
   font-weight: 600;
   
 }
